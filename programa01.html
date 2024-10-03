@@ -3,40 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prorgama 01</title>
+    <title>Programa 01</title>
 </head>
 <body>
-     <script>
+    <script>
 
-        function pulaLinha() {
+        function pulalinha() {
             document.write('<br>')
         }
+        function mostrar(texto){
+            document.write(texto)
+            pulalinha()
+        }
+        
 
         let ano = 2024
         let minhaIdade = ano - 2008
-        const idadeMae = ano - 1971
-        const idadePai = ano - 1964
+        const maeIdade = ano - 1971
+        const paiIdade = ano - 1964
 
-        document.write('Oi,Meu nome é André Vinícius e tenho ' +(minhaIdade) + ' anos') 
-        pulaLinha()
-        document.write('Oi,Meu nome da minha mãe é Maria e ela tem ' +(idadeMae) + ' anos') 
-        pulaLinha()
-        document.write('O nome do meu pai é Antônio e ele tem ' +(idadePai) + ' anos') 
-        pulaLinha()
-
-        let media = (minhaIdade + idadeMae + idadePai) /3
-        document.write(`A média das idades da minha família é: ${media} <br>`)
+        mostrar(`Oi, meu nome é André Vinícius e tenho ${minhaIdade} anos`)
+        mostrar(`O nome da minha mãe é Maria e ela tem ${maeIdade} anos`)
+        mostrar(`O nome do meu pai é Antônio e ele tem ${paiIdade} anos`)
+        let media = (minhaIdade + maeIdade + paiIdade) / 3
+        mostrar(`A média das idades da minha família é: ${media}`)
+        pulalinha()
 
         ano = 2030
 
-        document.write(' Em 2030 minha família terá' + '<br><br>')
-        document.write(`Eu terei ${ano - 2008} anos <br>`)
-        document.write(`Minha mãe terá ${ano - 1971} anos <br>`)
-        document.write(`Meu pai terá ${ano - 1964} anos <br>`)
-
-       
-       
-     </script>
-    
+        mostrar(' Em 2030 minha família terá: ')
+        mostrar(`Eu terei ${ano - 2008} anos`)
+        mostrar(`Minha mãe terá ${ano - 1971} anos`)
+        mostrar(`Meu pai terá ${ano - 1964} anos`)
+    </script>
 </body>
 </html>
