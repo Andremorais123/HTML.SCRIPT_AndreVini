@@ -1,41 +1,49 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="Pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programa 02</title>
+    <title>Programa II</title>
 </head>
 <body>
     <script>
-         function pulalinha() {
+        function pulalinha() {
             document.write('<br>')
         }
 
-        function mostrar(texto) {
+        function mostrar(texto){
             document.write(texto)
             pulalinha()
         }
 
-        function calculaIMC(altura, peso){
-            return imc = peso/ (altura * altura)
+        function calculaIMC (altura,peso){
+        return imc = peso/ (altura * altura)
         }
 
-        let nome = prompt('Qual é o seu nome?')
-        let alturaInformada = prompt(`${nome}, você poderia me informar sua altura? (Não informe sua altura com vírgula)`)
-        let pesoInformado = prompt(`${nome}, você poderia me informar seu peso?`)
+        let pesoCibelly = 52
+        let alturaCibelly = 1.64
 
-        mostrar(`O IMC de ${nome} é: ${alturaInformada, pesoInformado}`)
+    
+        let pesoClaudia = 68
+        let alturaClaudia = 1.68
 
-        //mostrar(`O imc de Stefany é: ${calculaIMC(1.59, 77)}`)
+        let nome = prompt(`Qual é o seu nome?`)
+        let alturaImformada = prompt(`${nome} você poderia me informar a sua altura? (Use ponto e não vìrgula para informar)`)
+        let pesoInformado = prompt (`${nome} você poderia me informar o seu peso?`)
 
-        if(imc < 18.5){
-            mostrar(`${nome}, seu IMC está abaixo do normal`)
-        } else if(imc > 25){
-            mostrar(`${nome}, seu IMC está acima do normal`)
-        } else {
-            mostrar(`${nome}, seu IMC está normal`)
-        }
+        mostrar(`O IMC de ${nome} é: ${ calculaIMC(alturaImformada, pesoInformado)}`)
 
+        //mostrar (`O imc da Cibelly é: ${calculaIMC(1.70, 68)}`)
+
+        if (imc < 18.5){
+            mostrar(`${nome}, seu IMC está abaixo do normal `)
+            } else if(imc > 25){
+                mostrar(`${nome}, seu IMC está acima do normal`)
+            } else {
+                mostrar(`${nome}, seu IMC está normal `)
+            }
+        
     </script>
+    
 </body>
 </html>
