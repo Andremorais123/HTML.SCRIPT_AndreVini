@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --fonte-titulo: "Fjalla One", sans-serif;;
+    --fonte-texto:"Lora", serif;
+    --pretoClaro: #333333ff;
+    --cinzaClaro: #d5ccc7ff;
+    --cinzaEscuro: #a9a29cff;
+    --Preto: #28262bff;
+}
+body{
+    background-color: var(--Preto);
+    font-family: var(--fonte-texto);
+}
+header{
+    background-color: white
+    text-align: center;
+    padding; 2em;
+    color: var(cinzaClaro)
+}
+header h1{
+    font-family: var(--fonte-titulo);
+    font-size: 2.5em;
+}
+.projetos{
+    padding: 2em;
+    display: flex;
+}
