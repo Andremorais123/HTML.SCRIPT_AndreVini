@@ -18,10 +18,10 @@ body{
     font-family: var(--fonte-texto);
 }
 header{
-    background-color: white
+    background-color: white;
     text-align: center;
-    padding; 2em;
-    color: var(cinzaClaro)
+    padding: 2em;
+    color: var(cinzaClaro);
 }
 header h1{
     font-family: var(--fonte-titulo);
@@ -30,4 +30,25 @@ header h1{
 .projetos{
     padding: 2em;
     display: flex;
+}
+.cartao {
+    text-align: center;
+    background-color: var(--cinzaClaro);
+    width: 100%;
+    margin: 1em 0;
+    color: var(--pretoClaro);
+    padding: 1em 0;
+    border-radius: 10px;
+}
+
+.cartao:hover{
+    background-color: var(--cinzaEscuro);
+
+}
+
+
+.catao a {
+    text-decoration: none;
+    color:chocolate;
+
 }
