@@ -17,7 +17,7 @@ body{
     background-color: var(--Preto);
     font-family: var(--fonte-texto);
 }
-header{
+header, footer{
     background-color: white;
     text-align: center;
     padding: 2em;
@@ -43,12 +43,16 @@ header h1{
 
 .cartao:hover{
     background-color: var(--cinzaEscuro);
-
 }
 
 
 .catao a {
     text-decoration: none;
     color:chocolate;
-
 }
+
+ footer a{
+    text-decoration: none;
+    color: var(--Preto);
+ }
+
