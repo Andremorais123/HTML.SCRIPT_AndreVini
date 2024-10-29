@@ -30,6 +30,8 @@ header h1{
 .projetos{
     padding: 2em;
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .cartao {
     text-align: center;
