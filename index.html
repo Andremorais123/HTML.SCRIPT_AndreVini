@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="Pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projetos de Front End </title>
+    <title><Projetos de Front End </title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -49,5 +49,32 @@
     <footer>
         <h3> Feito por<a href="https://github.com/Andremorais123"> André Morais</a></h3>
     </footer>
+    <script>
+
+        let segredo = [2, 5, 8]
+        let campoNUmero = document.querySelector('imput');
+        campoNumero.focus()
+
+        function verifica() {
+            let acertou = false
+
+            for( let i = 0; i < segredo.length; i++){
+            if(segredo[0] == campoNUmero.value){
+                alert('Você acertou!!')
+                acertou = true
+                break
+            } 
+
+        }
+            
+            if(acertou) {
+                alert('Você errou!!')
+            }
+            campoNumero.value = ''
+        }
+    
+        let botao = document.querySelector('button')
+        botao.onClick = verifica
+    </script>
 </body>
 </html>

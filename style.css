@@ -52,9 +52,30 @@ header h1{
     text-decoration: none;
     color:chocolate;
 }
-
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
  footer a{
     text-decoration: none;
     color: var(--Preto);
+ }
+ .primcipal-numero{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 50vh;
+ }
+ .numero-imput{
+    font-size: 2em;
+ }
+ .numero-botao{
+    margin-left: 1em;
+    font-size: 2em;
+    padding: 1em;
+    background-color: var(--cinzaClaro);
+    color: var(--Preto);
+    border-radius: 15px;
  }
 
